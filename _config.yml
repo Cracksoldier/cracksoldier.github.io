@@ -101,7 +101,20 @@ ignore:
 theme: coldnight
 theme_config: 
   sidebar: 
-    about: "false" 
+    about: "false"
+  stats:
+    enabled: true
+  navbar:
+    icon: "//"
+    icon_color: "#60a5fa"
+    title: Cracksoldier's Blog
+    links:
+      - name: Home
+        url: /
+      - name: Archive
+        url: /archives
+      - name: Stats
+        url: /stats
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

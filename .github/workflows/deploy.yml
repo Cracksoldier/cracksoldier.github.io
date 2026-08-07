@@ -1,4 +1,4 @@
-name: Deploy demo site
+name: Deploy to Pages
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
-          
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

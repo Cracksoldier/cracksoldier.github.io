@@ -11,6 +11,7 @@ author: Cracksoldier
 language: en
 timezone: ''
 
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://cracksoldier.github.io
@@ -98,6 +99,9 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: coldnight
+theme_config: 
+  sidebar: 
+    about: "false" 
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

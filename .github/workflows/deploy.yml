@@ -1,0 +1,49 @@
+name: Deploy demo site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - ".github/**"
+      - "*.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate site
+        run: |
+          # Patch the placeholder URL so asset paths resolve correctly on the
+          # deployed GitHub Pages site before Hexo reads the config.
+          sed -i 's|^url:.*|url: https://cracksoldier.github.io/coldnight-demo|' _config.yml
+          npx hexo generate
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+          
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

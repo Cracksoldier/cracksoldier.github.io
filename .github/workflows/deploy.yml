@@ -3,10 +3,6 @@ name: Deploy to Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - "docs/**"
-      - ".github/**"
-      - "*.md"
 
 jobs:
   build:

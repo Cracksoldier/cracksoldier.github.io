@@ -104,6 +104,8 @@ theme_config:
     about: "false"
   stats:
     enabled: true
+  links:
+    subtitle: "Basically my small cheat sheet for interesting stuff"
   navbar:
     icon: "//"
     icon_color: "#60a5fa"

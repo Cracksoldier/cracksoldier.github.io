@@ -2,3 +2,4 @@
   url: "https://etcher.balena.io/#download-etcher"
   abstract: Flash OS images to SD cards & USB drives, safely and easily.
   thumbnail: "/link_previews/etcher_link_preview.png"
+  tags: [tools]

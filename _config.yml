@@ -115,6 +115,8 @@ theme_config:
         url: /archives
       - name: Stats
         url: /stats
+      - name: Links
+        url: /links
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

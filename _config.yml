@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Cracksoldier's Blog
+title: cracksoldier.dev
 subtitle: ''
 description: ''
 keywords:
 author: Cracksoldier
 language: en
-timezone: ''
+timezone: 'Europe/Vienna'
 
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://cracksoldier.github.io
+url: https://cracksoldier.dev
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:

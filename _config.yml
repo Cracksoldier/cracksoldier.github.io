@@ -109,7 +109,7 @@ theme_config:
   navbar:
     icon: "//"
     icon_color: "#60a5fa"
-    title: Cracksoldier's Blog
+    title: cracksoldier.dev
     links:
       - name: Home
         url: /

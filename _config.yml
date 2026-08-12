@@ -95,6 +95,12 @@ include:
 exclude:
 ignore:
 
+# Search index
+search:
+  path: search.json
+  field: post
+  content: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/

@@ -106,6 +106,7 @@ search:
 ## Themes: https://hexo.io/themes/
 theme: coldnight
 theme_config: 
+  favicon: /favicon.png
   sidebar: 
     about: "false"
   stats:

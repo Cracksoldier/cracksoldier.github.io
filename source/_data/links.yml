@@ -3,3 +3,8 @@
   abstract: Flash OS images to SD cards & USB drives, safely and easily.
   thumbnail: "/link_previews/etcher_link_preview.png"
   tags: [tools]
+- title: "playit.gg"
+  url: "https://playit.gg/"
+  abstract: Host game servers from your own computer and let friends join from anywhere. No port forwarding required.
+  thumbnail: "/link_previews/playitgg.png"
+  tags: [tools]

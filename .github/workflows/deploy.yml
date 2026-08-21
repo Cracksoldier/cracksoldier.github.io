@@ -23,9 +23,6 @@ jobs:
 
       - name: Generate site
         run: |
-          # Patch the placeholder URL so asset paths resolve correctly on the
-          # deployed GitHub Pages site before Hexo reads the config.
-          sed -i 's|^url:.*|url: https://cracksoldier.github.io/coldnight-demo|' _config.yml
           npx hexo generate
 
       - name: Upload artifact

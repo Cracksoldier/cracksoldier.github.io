@@ -108,7 +108,12 @@ theme: coldnight
 theme_config: 
   favicon: /favicon.png
   sidebar: 
-    about: "false"
+    about: "true"
+    about_name: false
+    about_title: "What is this site?"
+    about_description: |
+      This page is basically my little cheat sheet.
+      Maybe you'll find something useful.
   stats:
     enabled: true
   links:
